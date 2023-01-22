@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/26d5de5473.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+   <body>
+
+    <header>
+      <h1>ROCK </h1> 
+      <h1> PAPER </h1> 
+      <h1>SCISSORS</h1>
+    </header>
+
+    <div class="make">
+      <p>Make your choise <span id="wisely">wisely</span>:</p>
+    </div>
+
+  <div class="whole">
+    <div class="choice"><a href="#"  id="click-r"><i class="fa-solid fa-hand-back-fist"></i>ROCK</a></div>
+    <div class="choice"><a href="#"  id="click-p"><i class="fa-solid fa-hand"></i>PAPER</a></div>
+    <div class="choice"><a href="#"  id="click-s"><i class="fa-solid fa-hand-scissors"></i>SCISSORS</a></div>
+  </div>
+<br>
+
+<div id="alert-pl-won-container">
+  <div class="alert-pl-won">
+    <p>You won! You got 5!</p>
+    <p>Show one more time your skills:</p>
+    <a href="#" class="btn" id="btn-r">Restart game</a>
+    
+  </div>
+</div>
+
+<div id="alert-comp-won-container">
+  <div class="alert-pl-won">
+    <p>You lost! AI got 5!</p>
+    <p>Next time you will be lucky:</p>
+    <a href="#" class="btn" id="btn-r1">Restart game</a>
+  </div>
+</div>
+
+  <div class="pl-comp">
+    <div class="choice-container">
+      <p >You got:</p>
+      <div class="fc" id="pl-choice">
+        <i class="fa-solid fa-hand-back-fist  fa-beat" style="--fa-beat-scale: 1.01;" id="rock-none"></i>
+        <i class="fa-solid fa-hand  fa-beat" style="--fa-beat-scale: 1.01;" id="paper-none"></i>
+        <i class="fa-solid fa-hand-scissors  fa-beat" style="--fa-beat-scale: 1.01;" id="scissors-none"></i>
+      </div>
+    </div>
+
+    <div class="choice-container">
+      <p>AI got:</p>
+      <div class="fc" id="comp-choice">
+        <i class="fa-solid fa-hand-back-fist fa-beat" style="--fa-beat-scale: 1.01;"  id="rock1-none"></i>
+        <i class="fa-solid fa-hand fa-beat" style="--fa-beat-scale: 1.01;"  id="paper1-none"></i>
+        <i class="fa-solid fa-hand-scissors fa-beat" style="--fa-beat-scale: 1.01;"  id="scissors1-none"></i>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <div class="results">
+
+    <div class="res"><p>Your score:</p>
+      <div class="inner-res" id="res-pl">0</div>
+    </div>
+    
+
+    <div class="res"><p>AI score:</p>
+      <div class="inner-res" id="res-comp">0</div>
+    </div>
+
+    <div class="res"><p>Tie:</p>
+      <div class="inner-res" id="res-tie">0</div>
+    </div>
+
+  </div>
+  <footer>
+
+  </footer>
+   </body>
+
+
+<script src="script.js"></script>
+
+
+
+</html>
+
+

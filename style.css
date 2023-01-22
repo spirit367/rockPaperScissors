@@ -1,0 +1,246 @@
+*{  
+    --main-bg-color: #FAF8F1;
+    --font-color: #7c6960;
+    --second-bg-color: #b8a5bd;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    height: 100vh;
+    background-color: var(--main-bg-color);
+    color: var(--font-color);
+    position: relative;
+}
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--second-bg-color);
+}
+h1 {
+    
+    font-size: 50px;
+    margin: 0 30px;
+    
+}
+.make {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.make p {
+    font-size: 40px;
+    color: #777777;
+}
+
+.make p #wisely {
+    color: #a481ae;
+}
+a { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--font-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    transition: all 0.2s ease-in-out;
+}
+a:hover {
+    text-shadow: 0 0 30px var(--font-color);
+}
+a:active {
+    transform: scale(0.9);
+}
+
+i {
+    margin-bottom: 10px;
+}
+.whole {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+   
+    
+}
+
+.choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 50px;
+    width: 20%;
+    height: 200px;
+    
+}
+
+.pl-comp {
+    width: 100%;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.choice-container {
+    
+    border: solid 4px var(--second-bg-color);
+    border-radius: 10px;
+    margin: auto 50px;
+    height: 100%;
+    width: 336px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.choice-container p {
+    font-size: 50px;
+
+}
+
+.fc {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    font-size: 90px;
+    align-items: center;
+    justify-content: center;
+}
+#rock-none {
+    
+    display: none;
+}
+#paper-none {
+    display: none;
+}
+#scissors-none {
+    display: none;
+}
+
+#rock1-none {
+    display: none;
+}
+
+#paper1-none {
+    display: none;
+}
+
+#scissors1-none {
+    display: none;
+}
+
+.results {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 50px;
+   
+}
+.res {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 200px;
+    margin: 0 50px;
+    
+}
+
+.inner-res {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 50px;
+    margin-top: 25px;
+}
+
+footer {
+    width: 100%;
+    height: 70px;
+    background-color: var(--second-bg-color) ;
+}
+
+/*alert*/
+#alert-pl-won-container {
+    display: none;
+}
+
+#alert-pl-won-container::before  {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.65);
+}
+
+#alert-comp-won-container {
+    display: none;
+}
+#alert-comp-won-container::before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.65);
+}
+
+.alert-pl-won {
+    width: 350px;
+    height: 250px;
+    background-color: var(--second-bg-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    border: solid 4px var(--font-color);
+    border-radius: 10px;
+    box-shadow: 0 0 50px var(--second-bg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.alert-pl-won p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.alert-pl-won .btn {
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    color: var(--second-bg-color);
+    background-color: var(--font-color);
+    border: none;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+.alert-pl-won .btn:hover {
+    background-color: var(--main-bg-color);
+    color: var(--font-color);
+    cursor: pointer;
+}
+
+.alert-pl-won .btn:active {
+    transform: scale(0.9);
+}
+
